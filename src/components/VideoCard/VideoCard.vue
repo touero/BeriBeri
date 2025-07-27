@@ -459,6 +459,7 @@ provide('getVideoType', () => props.type!)
                     marginBottom: horizontal ? '0.5rem' : '0',
                   }"
                   flex="inline items-center"
+                  :data-user-profile-id="video.author?.mid"
                 >
                   <VideoCardAuthorAvatar
                     v-if="horizontal && video.author"
